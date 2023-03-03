@@ -1,0 +1,22 @@
+.example-card {
+  max-width: 400px;
+  transition: transform .2s;
+}
+
+.example-header-image {
+  background-image: url('https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png');
+  background-size: cover;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 100vh;
+}
+
+.example-card:hover {
+  transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport)*/
+}

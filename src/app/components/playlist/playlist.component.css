@@ -1,0 +1,10 @@
+.text-color-green {
+  color: green;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-family: 'Tilt Warp', cursive;
+}
+.divider {
+  background-color: green;
+}

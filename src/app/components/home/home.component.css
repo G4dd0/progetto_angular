@@ -1,0 +1,21 @@
+:host {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  display: block;
+  width: 10rem;
+}
+
+.title {
+  color: green;
+  font-size: 2rem;
+  padding: 22px;
+  font-family: 'Tilt Warp', cursive;
+}
+
+.fadeIn {
+  animation: fadeIn 30s;
+}

@@ -1,0 +1,10 @@
+<mat-list>
+  <div class="text-color-green" *ngFor="let song of songs">
+    <p>{{song.title | uppercase}} made by {{song.author | uppercase}}</p>
+    <a [href]="song.file" target="_blank" rel="noopener noreferrer">▶️ Play this song</a>
+    <mat-divider class="divider"></mat-divider>
+    <!--<mat-list-item class="titolo">{{song.title}} made by {{song.author | uppercase}}</mat-list-item>
+    <a [href]="song.file" target="_blank" rel="noopener noreferrer">▶️ Play this song</a>
+    <mat-divider class="divider"></mat-divider> -->
+  </div>
+</mat-list>

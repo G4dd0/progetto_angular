@@ -1,0 +1,26 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <button matRipple matRippleColor="ffffff" [matRippleRadius]="rippleradius" mat-fab extended color="accent" routerLink="/">
+      <mat-icon>local_cafe</mat-icon>
+      Home
+    </button><br><br>
+    <button matRipple matRippleColor="ffffff" [matRippleRadius]="rippleradius" mat-fab extended color="accent" routerLink="register">
+      <mat-icon>face</mat-icon>
+      Registrati
+    </button><br><br>
+    <button matRipple matRippleColor="ffffff" [matRippleRadius]="rippleradius" mat-fab extended color="accent" routerLink="genres" (click)="clickMe()">
+      <mat-icon>library_music</mat-icon>
+      Music Genres
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <div text-align="top-right">
+      <button class="menubutton" type="button" mat-mini-fab color="green" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>
